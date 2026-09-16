@@ -1,8 +1,11 @@
-from utils import square, is_even, celsius_to_fahrenheit
+from utils import square, is_even, celsius_to_fahrenheit, greet
 
 def main():
+    name = input("Enter your name: ")
+    print(greet(name))
+    
     try:
-        user_input = float(input("Enter a number: "))
+        user_input = float(input("\nEnter a number: "))
         
         sq_val = square(user_input)
         even_status = "even" if is_even(user_input) else "odd"
